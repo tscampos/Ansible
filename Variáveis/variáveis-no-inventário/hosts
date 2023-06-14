@@ -1,8 +1,7 @@
 [maquinas]
-198.211.98.107
-142.93.11.178
+
 
 [maquinas:vars]
 nome:Tercio
-ansible_ssh_private_key_file=~/.ssh/aula-terraform.pub
+ansible_ssh_private_key_file=
 ansible_user=root
