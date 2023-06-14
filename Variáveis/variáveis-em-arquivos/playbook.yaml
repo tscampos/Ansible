@@ -1,0 +1,18 @@
+---
+- name: Exibindo exemplo
+  hosts: localhost
+  vars_files:
+    - vars.yaml
+  tasks:
+  - name: Exibir mensagem
+    ansible.builtin.debug:
+      msg: "Fala aí {{ nome }}, blz?"
+  - name: Exibir mensagem
+    ansible.builtin.debug:
+      msg: "Fala aí {{ nome }}, blz?"
+  - name: Exibir mensagem
+    ansible.builtin.debug:
+      msg: "Fala aí {{ nome }}, blz?"
+  - name: Exibir mensagem
+    ansible.builtin.debug:
+      msg: "Fala aí {{ nome }}, blz?"
