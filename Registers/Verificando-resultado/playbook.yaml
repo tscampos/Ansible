@@ -1,0 +1,11 @@
+---
+- name: Resultado de um comando
+  hosts: all
+  tasks:
+    - name: Execução de um comando
+      ansible.builtin.shell: ps
+      register: ps_result
+    - name: Verificar o Resultado
+      ansible.builtin.debug:
+        msg: "{{ ps_result }}"
+        # msg: "{{ ps_result.stdout }}" Essa mensagem retorna apenas as info do campo 'stdout'
